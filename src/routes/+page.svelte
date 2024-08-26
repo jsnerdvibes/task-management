@@ -45,7 +45,7 @@
           <tr class="text-white">
             <th scope="col" class="px-6 py-3">Sr</th>
             <th scope="col" class="px-6 py-3">Task Name</th>
-            <th scope="col" class="px-6 py-3">Done if Completed</th>
+            <th scope="col" class="px-6 py-3">Done ?</th>
           </tr>
         </thead>
         <tbody >
