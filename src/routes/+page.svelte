@@ -27,7 +27,7 @@
       <input type="text" 
              placeholder="Enter Task" 
              bind:value={TaskName}
-             class="bg-gray-700 border border-white text-white text-center text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-auto md:mr-2" />
+             class="bg-gray-700 border border-white text-white text-center text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/3 md:mr-2" />
       <button type="submit" 
               on:click={handleClick} 
               class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-3 py-2.5 text-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 md:ml-2">Add Task</button>
