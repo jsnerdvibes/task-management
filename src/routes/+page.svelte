@@ -20,6 +20,7 @@
     numberOfTask=taskList.length;
     TaskName = "";
     num++;
+    taskCompletion=(Math.ceil(taskCounter/numberOfTask*100))
   }
   };
   const taskState = (index: number) => {
@@ -27,6 +28,12 @@
     taskCounter++
     taskCompletion=(Math.ceil(taskCounter/numberOfTask*100))
   };
+  const reset = ()=>{
+    taskList=[];
+    taskCompletion=0;
+    numberOfTask=0
+    taskCounter=0
+  }
   
 </script>
 
@@ -41,7 +48,7 @@
               on:click={handleClick} 
               class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-3 py-2.5 text-center md:ml-2">Add Task</button>
               <button type="submit" 
-              on:click={()=>{taskList=[];taskCompletion=0}} 
+              on:click={reset} 
               class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-3 py-2.5 text-center md:ml-2">Reset Tasks</button>
     </form>
   </div>
@@ -67,7 +74,7 @@
                 >
                 <button 
                 class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-1 text-center "
-                on:click={() => taskState(index)}
+                on:click={() =>taskState(index)}
                   > Done </button></td
               >
             </tr>
