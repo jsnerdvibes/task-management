@@ -75,6 +75,7 @@
                 <button 
                 class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-1 text-center "
                 on:click={() =>taskState(index)}
+                disabled={task.isCompleted}
                   > Done </button></td
               >
             </tr>
